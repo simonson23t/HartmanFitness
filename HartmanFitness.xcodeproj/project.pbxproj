@@ -11,6 +11,8 @@
 		F4DA0A6225FEEACE00F3B9A8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4DA0A6125FEEACE00F3B9A8 /* ContentView.swift */; };
 		F4DA0A6425FEEACF00F3B9A8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4DA0A6325FEEACF00F3B9A8 /* Assets.xcassets */; };
 		F4DA0A6725FEEACF00F3B9A8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4DA0A6625FEEACF00F3B9A8 /* Preview Assets.xcassets */; };
+		F4DA0A7F25FF090B00F3B9A8 /* TextViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4DA0A7E25FF090B00F3B9A8 /* TextViews.swift */; };
+		F4DA0A8225FF0B8F00F3B9A8 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4DA0A8125FF0B8F00F3B9A8 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +22,8 @@
 		F4DA0A6325FEEACF00F3B9A8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F4DA0A6625FEEACF00F3B9A8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F4DA0A6825FEEACF00F3B9A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F4DA0A7E25FF090B00F3B9A8 /* TextViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextViews.swift; sourceTree = "<group>"; };
+		F4DA0A8125FF0B8F00F3B9A8 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,10 +56,9 @@
 		F4DA0A5E25FEEACE00F3B9A8 /* HartmanFitness */ = {
 			isa = PBXGroup;
 			children = (
-				F4DA0A5F25FEEACE00F3B9A8 /* HartmanFitnessApp.swift */,
-				F4DA0A6125FEEACE00F3B9A8 /* ContentView.swift */,
-				F4DA0A6325FEEACF00F3B9A8 /* Assets.xcassets */,
-				F4DA0A6825FEEACF00F3B9A8 /* Info.plist */,
+				F4DA0A7125FEF8A800F3B9A8 /* Models */,
+				F4DA0A7025FEF89C00F3B9A8 /* Views */,
+				F4DA0A6F25FEF88100F3B9A8 /* App */,
 				F4DA0A6525FEEACF00F3B9A8 /* Preview Content */,
 			);
 			path = HartmanFitness;
@@ -67,6 +70,33 @@
 				F4DA0A6625FEEACF00F3B9A8 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F4DA0A6F25FEF88100F3B9A8 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				F4DA0A5F25FEEACE00F3B9A8 /* HartmanFitnessApp.swift */,
+				F4DA0A6825FEEACF00F3B9A8 /* Info.plist */,
+				F4DA0A6325FEEACF00F3B9A8 /* Assets.xcassets */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		F4DA0A7025FEF89C00F3B9A8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F4DA0A6125FEEACE00F3B9A8 /* ContentView.swift */,
+				F4DA0A7E25FF090B00F3B9A8 /* TextViews.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F4DA0A7125FEF8A800F3B9A8 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F4DA0A8125FF0B8F00F3B9A8 /* Constants.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,6 +170,8 @@
 			files = (
 				F4DA0A6225FEEACE00F3B9A8 /* ContentView.swift in Sources */,
 				F4DA0A6025FEEACE00F3B9A8 /* HartmanFitnessApp.swift in Sources */,
+				F4DA0A7F25FF090B00F3B9A8 /* TextViews.swift in Sources */,
+				F4DA0A8225FF0B8F00F3B9A8 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,7 +303,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"HartmanFitness/Preview Content\"";
 				DEVELOPMENT_TEAM = VHBQ755ZF8;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = HartmanFitness/Info.plist;
+				INFOPLIST_FILE = HartmanFitness/App/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -293,7 +325,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"HartmanFitness/Preview Content\"";
 				DEVELOPMENT_TEAM = VHBQ755ZF8;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = HartmanFitness/Info.plist;
+				INFOPLIST_FILE = HartmanFitness/App/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
